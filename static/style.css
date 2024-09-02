@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.title {
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: rgb(94, 111, 209);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+
+.logo {
+    position: relative;
+    left: 90%;
+    bottom: 88px;
+}
+
+.logo_pic {
+    height: 100px;
+    width: 120px;
+}
+
+.title_txt {
+    color: rgb(246, 246, 246);
+    text-shadow: 2px 2px 1px rgba(255, 38, 0, 0.8);
+    position: relative;
+    padding-bottom: 10px;
+    bottom: 10px;
+}
+
+.title_txt1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 2px 2px 1px rgba(25, 93, 6, 0.8);
+}
+
+.desc {
+    padding-left: 29%;
+    padding-top: 49px;
+    color: rgb(235, 231, 231);
+    text-shadow: 2px 2px 1px rgba(25, 93, 6, 0.932);
+    position: relative;
+    bottom: 90px;
+}
+
+.desc2 {
+    position: relative;
+    top: 10px;
+    padding-left: 350px;
+}
+
+.heart_pic {
+    height: 150px;
+    bottom: 80px;
+    left: 65px;
+    z-index: 2;
+    position: relative;
+    animation: pulse 3s infinite;
+    /* Add animation to the heart */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.line {
+    position: relative;
+    z-index: 2;
+    bottom: 340px;
+    left: 1000px;
+}
+
+.heart_line {
+    height: 120px;
+    width: 300px;
+}
+
+.robohand {
+    position: relative;
+    bottom: 240px;
+}
+
+.hand_pic {
+    height: 150px;
+}
+
+.container {
+    font-family: 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    bottom: 475px;
+    color: aliceblue;
+    background-color: rgb(97, 101, 179);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.container .headline {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    bottom: 15px;
+}
+
+.container .form .name_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.name_details .input_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_group .detail {
+    margin-bottom: 5px;
+}
+
+.inputbox {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid #320cf1;
+}
+
+.radio_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio_group input {
+    margin-right: 5px;
+}
+
+.button {
+    position: relative;
+    padding: 10px;
+    background-color: #1ad02f;
+    color: white;
+    left: 260px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}

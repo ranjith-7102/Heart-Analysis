@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Heart Health Check</title>
+</head>
+<body>
+    <div class="title">
+        <h1 class="title_txt">Heart Disease <span class="title_txt1">Analysis</span></h1>
+    </div>
+    <div class="logo">
+        <img class="logo_pic" src="/static/logo1.png" alt="Logo">
+    </div>
+    <div class="desc">
+        <h2 class="desc1">"Early prediction and prevention of heart disease</h2>
+        <h2 class="desc2">save lives and reduce healthcare costs."</h2>
+    </div>
+    <div class="heart">
+        <img class="heart_pic" src="../static/heart.png" alt="heart">
+    </div>
+    <div class="line">
+        <img class="heart_line" src="../static/heart_line.png" alt="heart line">
+    </div>
+    <div class="robohand">
+        <img class="hand_pic" src="../static/robo hand.png" alt="Robo hand">
+    </div>
+    <div class="container">
+        <div class="headline">
+            <h4 class="head_txt">Enter Your Details</h4>
+        </div>
+        <div class="form">
+            <form action="{{ url_for('predict') }}" method="post">
+                <div class="name_details">
+                    <div class="input_group">
+                        <h4 class="detail">Age</h4>
+                        <input class="inputbox" type="number" name="age" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Sex</h4>
+                        <div class="radio_group">
+                            <input id="male" type="radio" value="1" name="sex">
+                            <label for="male">Male</label>
+                            <input id="female" type="radio" value="0" name="sex">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Chest Pain (range 1 to 3)</h4>
+                        <input class="inputbox" type="number" name="chestPain" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Blood pressure (range 94 to 200 mm Hg)</h4>
+                        <input class="inputbox" type="number" name="cloodPressure" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Cholesterol level (range 126 to 564 mg/dl)</h4>
+                        <input class="inputbox" type="number" name="cholesterol" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Blood sugar > 120 mg/dl (1 = Yes; 0 = NO)</h4>
+                        <input class="inputbox" type="number" name="bloodSugar" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Resting electrocardiographic results (0=norm, 1=med, 2=high)</h4>
+                        <input class="inputbox" type="number" name="electrocardio" placeholder="Enter Here...">
+                    </div>
+                    <div class="input_group">
+                        <h4 class="detail">Maximum heart rate (range 71 to 202 beat /min)</h4>
+                        <input class="inputbox" type="number" name="heartRate" placeholder="Enter Here...">
+                    </div>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
